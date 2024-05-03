@@ -28,10 +28,10 @@
     position: relative;
     width: 200px;
     height: 200px;
-    border: 3.5px solid #7A6149;
+    border: 2px solid black;
     border-radius: 50%;
     margin: 50px auto;
-    background: #007040;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@
   position: absolute;
   bottom: 50%;
   transform-origin: 50% 100%;
-  background-color: #f1e09c;
+  background-color: black;
   z-index: 2; /* Higher to appear above the numbers */
   border-radius: 2px; /* Applies a subtle roundness to all edges */
 }
@@ -61,7 +61,7 @@
 .second {
   width: 2px;
   height: 85px; /* Longest hand for seconds */
-  background-color: #f1e09c; /* Typically the second hand is red */
+  background-color: red; /* Typically the second hand is red */
   z-index: 4; /* Higher to appear above the numbers */
   /*border-radius: 50% 50% 1px 1px ;*/ /* Rounded on the top edges */
 }
@@ -84,7 +84,6 @@
   width: 20px;
   height: 20px;
   text-align: center;
-  color: #F1E3AB;
   font-size: 14px;
   font-family: Arial, sans-serif;
   transform: translate(-50%, -50%) translateY(var(--vertical-offset)); /* Adjusted to move numbers down */
@@ -106,7 +105,7 @@
   position: absolute;
   width: 4.5px;   /* Size of the circle */
   height: 4.5px;  /* Size of the circle */
-  background-color: #f1e09c;
+  background-color: red;
   border-radius: 50%; /* Makes the div perfectly round */
   top: 50%;
   left: 50%;
@@ -126,25 +125,6 @@
   padding: 5px 10px; /* Adds padding inside the buttons for better appearance */
   z-index: 2; /* Higher z-index to ensure it's clickable */
 }
-
-.brand-name {
-  position: absolute;
-  top: 30%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%);
-  font-family: 'Arial', sans-serif; /* Stylish, readable font */
-  font-size: 24px; /* Appropriate size for visibility */
-  color: gold; /* Gold color for a luxurious look */
-  opacity: 0.8; /* Slightly transparent for subtlety */
-}
-
-#rolex-logo {
-  height: 50px; /* Adjust size as needed */
-  width: auto; /* Maintain aspect ratio */
-  z-index: 2; /* Ensures the image is on top */
-  position: absolute;
-}
-
 
 #currentTime {
   text-align: center;

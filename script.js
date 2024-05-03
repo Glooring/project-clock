@@ -60,16 +60,14 @@ function updateTime() {
 
 function createNumbers() {
   const numbersContainer = document.querySelector('.numbers-container');
-  // Array of Roman numerals from I to XII
-  const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
-
-  for (let i = 0; i < 12; i++) { // Loop from 0 to 11 for index access
+  for (let i = 1; i <= 12; i++) {
     let number = document.createElement('div');
-    number.classList.add('number', `number${i+1}`);
-    number.textContent = romanNumerals[i]; // Use the array for numeral
+    number.classList.add('number');
+    number.classList.add(`number${i}`);
+    number.textContent = i;
     // Position the number inside the clock
     number.style.transform =
-      `rotate(${(270 + (i+1) * 30) % 360}deg) translate(var(--clock-padding)) rotate(-${(270 + (i+1) * 30) % 360}deg)`;
+    `rotate(${(270 + i * 30) % 360}deg) translate(var(--clock-padding)) rotate(-${(270 + i * 30) % 360}deg)`;
     numbersContainer.appendChild(number);
   }
 }
