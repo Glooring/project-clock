@@ -28,10 +28,10 @@
     position: relative;
     width: 200px;
     height: 200px;
-    border: 2px solid black;
+    border: 3.5px solid black;
     border-radius: 50%;
     margin: 50px auto;
-    background: white;
+    background: rgb(0, 196, 147);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +125,18 @@
   padding: 5px 10px; /* Adds padding inside the buttons for better appearance */
   z-index: 2; /* Higher z-index to ensure it's clickable */
 }
+
+.brand-name {
+  position: absolute;
+  top: 28%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  font-family: 'Arial', sans-serif; /* Stylish, readable font */
+  font-size: 24px; /* Appropriate size for visibility */
+  color: gold; /* Gold color for a luxurious look */
+  opacity: 0.8; /* Slightly transparent for subtlety */
+}
+
 
 #currentTime {
   text-align: center;
